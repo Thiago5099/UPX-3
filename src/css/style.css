@@ -20,7 +20,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #404244; /* Fundo cinza */
     border-bottom: 1px solid #555; /* Borda cinza */
 }
 
@@ -78,7 +78,7 @@ body {
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: rgba(92, 92, 92, 0.9);
+    background-color: #404244;
     font-size: 0.9rem;
 }
 

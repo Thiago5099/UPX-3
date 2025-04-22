@@ -51,7 +51,7 @@ body {
 }
 
 .sidebar h2 {
-    color: #28a745;
+    color: #43CAAD;
     font-size: 18px;
     margin: 20px 0 10px;
 }
@@ -73,7 +73,7 @@ body {
 
 .sidebar ul li a:hover + span,
 .sidebar ul li span:hover {
-    color: #28a745;
+    color: #43CAAD;
 }
 
 /* Conteúdo do Fórum */
@@ -161,4 +161,10 @@ body {
 
 .sidebar.d-none + #main-content {
     max-width: 100%; 
+}
+
+
+.text-sucess {
+    color: #43CAAD;
+   
 }

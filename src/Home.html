@@ -13,7 +13,14 @@
         <div class="logo">A.U.R.A</div>
         <nav class="nav">
             <a href="#" id="home-link">Home</a>
-            <a href="#" id="forum-link">Fórum</a>
+            <div class="dropdown">
+                <a href="#" id="forum-link" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Fórum</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Tecnologias</a></li>
+                    <li><a class="dropdown-item" href="#">Sustentabilidade</a></li>
+                    <li><a class="dropdown-item" href="#">Inovações</a></li>
+                </ul>
+            </div>
             <a href="#" id="noticias-link">Notícias</a>
             <a href="#" id="sobre-link">Sobre o Projeto</a>
         </nav>
@@ -23,22 +30,9 @@
         </div>
     </header>
 
-    <!-- Main com Sidebar e Conteúdo -->
-    <main class="container-fluid">
-        <div class="row">
-            <!-- Sidebar (escondida por padrão) -->
-            <div class="col-md-3 sidebar d-none" id="forum-sidebar">
-                <h2 class="text-success">Tecnologias</h2>
-                <ul class="list-unstyled">
-                    <li><a href="#" aria-label="Energia hidrelétrica">Energia hidrelétrica</a><br><span>Porquê? Questões Vantagens</span></li>
-                    <li><a href="#" aria-label="Energia eólica">Energia eólica</a><br><span>Porquê? Questões Vantagens</span></li>
-                    <li><a href="#" aria-label="Energia das ondas">Energia das ondas</a><br><span>Porquê? Questões Vantagens</span></li>
-                    <li><a href="#" aria-label="Energia solar">Energia solar</a><br><span>Porquê? Questões Vantagens</span></li>
-                </ul>
-                <h2 class="text-success">Sustentabilidade</h2>
-                <h2 class="text-success">Meu Ambiente</h2>
-                <h2 class="text-success">Favoritos</h2>
-            </div>
+ 
+  
+      
 
             <!-- Conteúdo Principal -->
             <div class="col-md-9 content" id="main-content">

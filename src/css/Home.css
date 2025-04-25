@@ -168,3 +168,16 @@ body {
     color: #43CAAD;
    
 }
+
+
+.nav .dropdown {
+    position: relative;
+}
+
+.nav .dropdown-toggle {
+    color: #6C7896;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+
+}

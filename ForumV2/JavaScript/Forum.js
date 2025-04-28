@@ -1,0 +1,1 @@
+lert("Olá do JavaScript!");

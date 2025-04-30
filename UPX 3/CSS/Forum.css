@@ -1,0 +1,320 @@
+/* Define as seções principais como colunas flexíveis posicionadas absolutamente ocupando toda a altura */
+.inner-main,
+.inner-sidebar {
+    margin-top: 327px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estiliza a sidebar (menu lateral) à esquerda */
+.inner-sidebar {
+    left: 0; /* fixa à esquerda */
+    width: 235px; /* largura da sidebar */
+    border-right: 1px solid #000000; /* borda divisória à direita */
+    background-color: #000000; /* fundo branco */
+    z-index: 1; /* aparece acima de outros elementos */
+}
+
+/* Estiliza a área principal, ocupando o espaço ao lado da sidebar */
+.inner-main {
+    right: 0;
+    left: 235px; /* começa após a sidebar */
+}
+
+/* Cabeçalhos e rodapés das áreas principal e lateral */
+.inner-main-footer,
+.inner-main-header,
+.inner-sidebar-footer,
+.inner-sidebar-header {
+    height: 3.5rem; /* altura fixa */
+    border-bottom: 1px solid #000000; /* borda inferior */
+    display: flex;
+    align-items: center; /* centraliza verticalmente */
+    padding: 0 1rem; /* espaçamento interno horizontal */
+    flex-shrink: 0; /* impede que encolha ao redimensionar */
+}
+
+/* Corpo da sidebar e da área principal com rolagem vertical */
+.inner-main-body,
+.inner-sidebar-body {
+    padding: 1rem; /* espaçamento interno */
+    overflow-y: auto; /* ativa rolagem vertical */
+    position: relative;
+    flex: 1 1 auto; /* ocupa o espaço restante */
+}
+
+/* Garante que elementos com .sticky-top fiquem acima dos demais */
+.inner-main-body .sticky-top,
+.inner-sidebar-body .sticky-top {
+    z-index: 999;
+}
+
+/* Fundo branco para cabeçalhos e rodapés da área principal */
+.inner-main-footer,
+.inner-main-header {
+    background-color: #3e3e3e;
+}
+
+/* Ajustes de borda e altura mínima para os rodapés */
+.inner-main-footer,
+.inner-sidebar-footer {
+    border-top: 1px solid #e4e5e7; /* borda superior */
+    border-bottom: 0; /* remove borda inferior */
+    height: auto;
+    min-height: 3.5rem;
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 767.98px) {
+    .inner-sidebar {
+        left: -235px; /* esconde a sidebar para fora da tela */
+    }
+    .inner-main {
+        left: 0; /* expande a área principal */
+    }
+    .inner-expand .main-body {
+        overflow: hidden; /* evita rolagem do corpo principal */
+    }
+    .inner-expand .inner-wrapper {
+        transform: translate3d(235px, 0, 0); /* desliza a sidebar para dentro da tela */
+    }
+}
+
+/* Estilo dos links de navegação quando ativos ou em foco */
+.nav .show>.nav-link.nav-link-faded,
+.nav-link.nav-link-faded.active,
+.nav-link.nav-link-faded:active,
+.nav-pills .nav-link.nav-link-faded.active,
+.navbar-nav .show>.nav-link.nav-link-faded {
+    color: #ffffff; /* cor do texto */
+    background-color: #3e3e3e; /* fundo azul claro */
+}
+
+/* Estilo dos links de navegação com .nav-pills quando ativos */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #ffffff; /* texto branco */
+    background-color: #ffffff; /* fundo azul */
+}
+
+/* Estilo para links com ícones */
+.nav-link.has-icon {
+    display: flex;
+    align-items: center;
+}
+
+/* Cor para links ativos */
+.nav-link.active {
+    color: #ffffff;
+}
+
+/* Cor de fundo dos links inativos */
+.nav-link:not(.active) {
+    background-color: #3e3e3e;
+    color: #fff;
+}
+
+/* Bordas arredondadas nos links de navegação com .nav-pills */
+.nav-pills .nav-link {
+    border-radius: .25rem;
+}
+
+/* Cor padrão dos links */
+.nav-link {
+    color: #ffffff;
+}
+
+/* Sombra sutil nos cartões */
+.card {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+/* Estilo geral dos cartões */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word; /* quebra palavras longas */
+    background-color: #3e3e3e;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem; /* cantos arredondados */
+}
+
+/* Corpo interno dos cartões */
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.colorButton{
+    background-color: #3e3e3e;
+}
+
+Cor de texto dos cards
+.card,
+.card * {
+    color: #ffffff !important; /* Troque para a cor desejada */
+}
+
+.inner-sidebar-body::-webkit-scrollbar {
+    width: 0px !important;
+    background: transparent !important;
+}
+.inner-sidebar-body {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+
+/* src/css/style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #404244;
+    border-bottom: 1px solid #555;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #43CAAD;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #6C7896;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilizando os botões do Bootstrap */
+.btn-success {
+    background-color: #43CAAD;
+    border-color: #43CAAD;
+}
+
+.btn-success:hover {
+    background-color: #5cffbe;
+    border-color: #5cffbe;
+}
+
+.btn-secondary {
+    background-color: #ccc;
+    border-color: #ccc;
+}
+
+.btn-secondary:hover {
+    background-color: #bbb;
+    border-color: #bbb;
+}
+
+.hero {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 100px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    height: calc(100vh - 140px);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #43CAAD;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #43CAAD;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#main-content {
+    margin: 0 auto; 
+    float: none; 
+}
+
+.sidebar.d-none + #main-content {
+    max-width: 100%; 
+}
+
+.text-sucess {
+    color: #43CAAD;
+}
+
+.nav .dropdown {
+    position: relative;
+}
+
+.nav .dropdown-toggle {
+    color: #6C7896;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+/* Rodapé */
+.footer {
+    background-color: #404244;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-top: 1px solid #555;
+}
+
+.footer a {
+    color: #43CAAD;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}

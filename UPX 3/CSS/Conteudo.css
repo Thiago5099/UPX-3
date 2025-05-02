@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #000 !important;
     color: #fff !important;
     line-height: 1.6;
@@ -28,27 +28,19 @@ body {
     color: #43CAAD;
 }
 
-/* Navegação */
 .nav {
     display: flex;
     gap: 20px;
 }
 
-.nav a,
-.nav .dropdown-toggle {
+.nav a {
     color: #6C7896;
     text-decoration: none;
     font-size: 1rem;
 }
 
-.nav a:hover,
-.nav .dropdown-toggle:hover {
+.nav a:hover {
     text-decoration: underline;
-    color: #fff;
-}
-
-.nav .dropdown {
-    position: relative;
 }
 
 /* Container principal */
@@ -205,6 +197,20 @@ ul li a:hover {
     color: #43CAAD;
     text-decoration: none;
 }
+
+.nav .dropdown {
+    position: relative;
+}
+
+.nav .dropdown-toggle {
+    color: #6C7896;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+
 
 .footer a:hover {
     text-decoration: underline;

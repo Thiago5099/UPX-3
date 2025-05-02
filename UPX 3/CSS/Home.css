@@ -186,3 +186,7 @@ body {
 
 }
 
+.icon {
+    width: 20px; /* Tamanho do ícone */
+    height: 20px;
+  }

@@ -209,3 +209,8 @@ ul li a:hover {
 .footer a:hover {
     text-decoration: underline;
 }
+
+.icon {
+    width: 20px; /* Tamanho do ícone */
+    height: 20px;
+  }

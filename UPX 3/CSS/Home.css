@@ -12,9 +12,11 @@ body {
 }
 
 .header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 20px 40px;
     background-color: #404244;
     border-bottom: 1px solid #555;
@@ -27,8 +29,11 @@ body {
 }
 
 .nav {
-    display: flex;
+    display: fixed;
+    top: 0;
     gap: 20px;
+    padding: 15px;
+    z-index: 1000;
 }
 
 .nav a {
@@ -142,7 +147,7 @@ body {
     padding: 20px;
     background-color: #404244;
     font-size: 0.9rem;
-    position: fixed;
+    position: static;
     left: 0;
     bottom: 0;
     width: 100%;

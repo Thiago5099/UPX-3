@@ -20,6 +20,7 @@ body {
     padding: 20px 40px;
     background-color: #404244;
     border-bottom: 1px solid #555;
+    z-index: 1001; /* Garante que o header fique acima do conteúdo */
 }
 
 .logo {
@@ -29,8 +30,7 @@ body {
 }
 
 .nav {
-    display: fixed;
-    top: 0;
+    display: flex;
     gap: 20px;
     padding: 15px;
     z-index: 1000;
@@ -46,48 +46,15 @@ body {
     text-decoration: underline;
 }
 
-/* Sidebar */
-.sidebar {
-    background-color: #222;
-    padding: 20px;
-    border-right: 1px solid #666;
-    min-height: calc(100vh - 140px); /* Ajustado para o header e footer */
+.nav .dropdown {
+    position: relative;
 }
 
-.sidebar h2 {
-    color: #43CAAD;
-    font-size: 18px;
-    margin: 20px 0 10px;
-}
-
-.sidebar ul li {
-    margin: 10px 0;
-}
-
-.sidebar ul li a {
-    color: #fff;
+.nav .dropdown-toggle {
+    color: #6C7896;
     text-decoration: none;
-    font-weight: bold;
-}
-
-.sidebar ul li span {
-    color: #ccc;
-    font-size: 14px;
-}
-
-.sidebar ul li a:hover + span,
-.sidebar ul li span:hover {
-    color: #43CAAD;
-}
-
-/* Conteúdo do Fórum */
-.forum-content h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    color: #000;
-    padding: 10px;
-    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 /* Estilizando os botões do Bootstrap */
@@ -111,6 +78,7 @@ body {
     border-color: #bbb;
 }
 
+/* Hero Section */
 .hero {
     display: flex; 
     flex-direction: column; 
@@ -127,12 +95,29 @@ body {
     font-size: 3rem;
     color: #43CAAD;
     margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0s;
 }
 
 .hero p {
     font-size: 1.1rem;
     margin-bottom: 20px;
     color: #43CAAD;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.hero p:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.hero p:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.hero .btn {
+    margin-bottom: 20px;
 }
 
 .hero-image {
@@ -140,8 +125,64 @@ body {
     height: auto;
     border-radius: 10px;
     margin-top: 30px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.9s;
 }
 
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    color: #43CAAD;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
 .footer {
     text-align: center;
     padding: 20px;
@@ -163,35 +204,26 @@ body {
     text-decoration: underline;
 }
 
+/* Outros estilos */
 #main-content {
     margin: 0 auto; 
     float: none; 
+    padding-top: 100px; /* Ajuste conforme a altura do header */
 }
 
-.sidebar.d-none + #main-content {
+aside {
     max-width: 100%; 
+    position: sticky;
+    top: 50px;
+    width: 200px;
+    height: fit-content;
 }
-
 
 .text-sucess {
     color: #43CAAD;
-   
-}
-
-
-.nav .dropdown {
-    position: relative;
-}
-
-.nav .dropdown-toggle {
-    color: #6C7896;
-    text-decoration: none;
-    font-size: 1rem;
-    cursor: pointer;
-
 }
 
 .icon {
     width: 20px; /* Tamanho do ícone */
     height: 20px;
-  }
+}

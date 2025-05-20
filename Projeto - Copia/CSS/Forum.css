@@ -141,27 +141,28 @@ main {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espaçamento entre a busca e o conteúdo principal */
 }
 
-/* Novo estilo para o contêiner principal das boxes e botões */
 .conteudo-principal {
     display: flex;
     align-items: flex-start; /* Alinha os itens do contêiner ao topo */
     gap: 30px; /* Espaçamento entre a coluna de cards e a coluna de botões */
     padding: 0 40px; /* Adicione um padding lateral para não colar nas bordas */
+    padding-top: 0px !important; /* Espaçamento entre a busca e o conteúdo principal */
 }
 
 .container-Busca {
     /* Ajuste o width para se alinhar com o conteudo-principal */
     width: calc(94% + 30px); /* Ajuste com base no width da box e do gap */
     margin: 0 auto; /* Centraliza a boxBusca se ela tiver um width definido */
-    display: flex; /* Para alinhar o conteúdo dentro da boxBusca se necessário */
-    align-items: center; /* Exemplo de alinhamento */
-    justify-content: space-between; /* Exemplo de alinhamento */
+    display: flex; 
+    align-items: start;
+    justify-content: space-between; 
     padding-left: 10px;
+    padding-top: 60px;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
 }
-
 
 
 .boxBusca {
@@ -177,33 +178,31 @@ main {
 
 .boxBusca h3{
 font-size: 20px;
+text-align: center;
 }
+
 
 .container-Button {
     display: flex;
     flex-direction: column; /* Coloca os botões um abaixo do outro */
     align-items: flex-end; /* Alinha os botões à direita (final da coluna) */
     gap: 10px; /* Espaçamento entre os botões */
-    padding-top: 60px; /* Pequeno ajuste para alinhar com a primeira box */
+    padding-top: -10px; /* Pequeno ajuste para alinhar com a primeira box */ 
 }
-
-.container-text{
- display: flex;
-}
-
 
 /* layoat dos cars (mantido) */
 .box {
     width: 80%; /* Ajuste para preencher o container-cards */
-    height: 220px;
-    border: 2px solid #000000;
+    height: 220px;;
     background-color: #404244;
     border-radius: 1cqmin;
+    margin-bottom: 10px;
 }
 
 .box p{
     margin-left:100px;
     flex-wrap: wrap;
+    font-size: 15px;
 }
 
 .box h3{
@@ -282,7 +281,6 @@ font-size: 20px;
 
 .info-extra {
     gap: 10px;
-    margin-top: 10px;
     margin-left: 40px;
 }
 
@@ -290,7 +288,6 @@ font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin-top: -120px;
     margin-left: 30px;
     gap: 20px;
 }
@@ -314,4 +311,98 @@ font-size: 20px;
     height: 40px;                 
     width: 200px;                  
     border-width: 2px;             
+}
+
+.perfilBox{
+    background-color: rgb(0, 0, 0);
+    height: 40px;                 
+    width: 200px;
+    display: flex;
+    align-items: start;
+    font-size: 18px;  
+    margin: 10px;
+    color: #43CAAD;
+}
+
+
+.custom-select {
+  background-color: #232323 !important; 
+  color: #ffffff;           
+  border: 3px solid #232323;             
+  border-radius: 8px;                 
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  height: 40px; /*altura*/
+  width: 129px; /*largura*/
+  /* seta como imagem */
+  background-image: url('/Imagens/Componentes/Seta_Select2.png'); /* caminho da imagem */
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px 16px;
+}
+
+.custom-select:focus {
+  border-color: #232323; 
+  box-shadow: 0 0 0 0px;
+  outline: none;
+}
+
+.custom-select option {
+  background-color: #232323; /* fundo da opção aberta */
+  color: white;
+  text-align: center;
+  border: none;
+}
+
+.custom-select-wrapper {
+  position: relative;
+}
+
+.cotainer-Search{
+    margin-top: 32px;
+}
+
+.custom-search{
+    background-color: #232323 !important;
+    border-color: #232323;
+    color: #fff !important;
+}
+
+.custom-search:focus{ 
+    box-shadow: none;
+    outline: none;
+    border-color: transparent;
+}
+
+.custom-search::placeholder{ 
+    color: #404244 !important;
+}
+
+.custom-input {  
+  width: 586px;        /* Largura do campo de busca */
+  background-color: #232323;
+  color: white;
+  border: 1px solid #404244;
+}
+
+.custom-input::placeholder {
+  color: #888;
+}
+
+.custom-button {
+  width: 120px;         /* Largura separada do botão */
+  margin-left: 30px;    /* Espaço entre input e botão */
+  background-color: #43CAAD !important;
+  color: white;
+  border: transparent;
+}
+
+.custom-button:hover{
+    background-color: #232323 !important;
+}
+
+.custom-select,.custom-search,.custom-button {
+    height: 50px;           /* ajuste conforme necessário */
+    font-size: 15px;
+    border-radius: 12px;    /* se quiser bordas arredondadas como na imagem */
 }

@@ -1,0 +1,91 @@
+ /* Estilos personalizados para o Sobre */
+        /* Box centralizada para o conteúdo */
+        .about-box {
+            background: #181a1b;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+            padding: 48px 32px 32px 32px;
+            max-width: 700px;
+            margin: 60px auto 40px auto;
+            text-align: center;
+            border: 1px solid #2c2f34;
+        }
+        .about-box h1 {
+            color: #43CAAD;
+            margin-bottom: 24px;
+            font-size: 2.3rem;
+        }
+        .about-box h2 {
+            color: #43CAAD;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+        }
+        .about-box p, .about-box ul {
+            color: #fff;
+            font-size: 1.08rem;
+            margin-bottom: 18px;
+        }
+        .about-box ul {
+            text-align: left;
+            display: inline-block;
+            margin: 0 auto 18px auto;
+        }
+        .about-box img {
+            max-width: 320px;
+            margin: 24px auto 32px auto;
+            border-radius: 10px;
+            display: block;
+        }
+        @media (max-width: 800px) {
+            .about-box {
+                padding: 32px 10px 24px 10px;
+            }
+        }
+        /* Animações de entrada */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px);}
+            100% { opacity: 1; transform: translateY(0);}
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+        }
+        .fade-in-up {
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        /* Delays para animação em sequência */
+        .delay-0 { animation-delay: 0s; }
+        .delay-1 { animation-delay: 0.3s; }
+        .delay-2 { animation-delay: 0.6s; }
+        .delay-3 { animation-delay: 0.9s; }
+        .delay-4 { animation-delay: 1.2s; }
+        .delay-5 { animation-delay: 1.5s; }
+        .delay-6 { animation-delay: 1.8s; }
+
+
+        .footer {
+    text-align: center;
+    padding: 8px 0px;
+    background-color: #404244;
+    font-size: 0.9rem;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.footer a {
+    color: #43CAAD;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

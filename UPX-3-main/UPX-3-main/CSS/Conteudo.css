@@ -1,0 +1,236 @@
+/* Importa a fonte Inter do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #000 !important;
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Estrutura Geral */
+.container {
+    display: flex;
+    padding: 2rem;
+    padding-top: 100px;
+}
+
+#main-content {
+    margin: 0 auto;
+    float: none;
+}
+
+.sidebar.d-none + #main-content {
+    max-width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #222;
+    padding: 20px;
+    border-right: 1px solid #666;
+    border-radius: 8px;
+    min-height: calc(100vh - 140px);
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar h2 {
+    color: #43CAAD;
+    font-size: 18px;
+    margin: 20px 0 10px;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a.active {
+    color: #43CAAD;
+    border-left: 3px solid #43CAAD;
+    padding-left: 10px;
+}
+
+.sidebar ul li a:hover {
+    color: #43CAAD;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    flex: 3;
+    padding-right: 2rem;
+}
+
+.forum-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Tipografia */
+h1, h2 {
+    color: #fff !important;
+}
+
+h1 {
+    margin-top: 100px;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.date {
+    font-size: 0.8rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+.text-sucess {
+    color: #43CAAD;
+}
+
+/* Imagens */
+img,
+.hero-image {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: #43CAAD;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    height: calc(100vh - 140px);
+}
+
+.hero h1 {
+    color: #43CAAD;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #43CAAD;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 8px 0px;
+    background-color: #404244;
+    font-size: 0.9rem;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.footer a {
+    color: #43CAAD;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Botões */
+.btn-success {
+    background-color: #43CAAD;
+    border-color: #43CAAD;
+}
+
+.btn-success:hover {
+    background-color: #5cffbe;
+    border-color: #5cffbe;
+}
+
+.btn-secondary {
+    background-color: #ccc;
+    border-color: #ccc;
+}
+
+.btn-secondary:hover {
+    background-color: #bbb;
+    border-color: #bbb;
+}
+
+/* Meta Info */
+.meta-info {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin: 0.5rem 0 1rem 0;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+}
+
+.meta-info .date {
+    color: #ccc;
+}
+
+.meta-info .reading-time {
+    color: #43CAAD;
+}

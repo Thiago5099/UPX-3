@@ -22,3 +22,11 @@ Ser referência em educação, colaboração e engajamento sobre energias limpas
 ## Nossa Equipe
 
 O projeto é formado por entusiastas, estudantes e profissionais apaixonados por tecnologia, meio ambiente e energias renováveis. Juntos, buscamos criar um espaço aberto para troca de experiências e aprendizado contínuo.
+
+## Ver o Projeto
+
+Ficou interessado em ver nosso projeto? É só acessar este link do GitHub Pages:  
+👉 [https://thiago5099.github.io/UPX-3/index.html](https://thiago5099.github.io/UPX-3/index.html)
+
+> ⚠️ Lembrando que o GitHub Pages não permite o uso de arquivos com API.  
+> Para testar a API que desenvolvemos para o login, você precisa baixar o projeto localmente.

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Forum</title>
+    <link rel="stylesheet" href="CSS/Forum.css">
+    <link rel="stylesheet" href="/CSS/Menu.css">
+</head>
+
+<body>
+    <!--Menu-->
+    <header class="header">
+        <div class="logo">A.U.R.A</div>
+        <nav class="nav">
+            <a href="index.html"> <img src="Imagens/Icones/home.png" class="icon"> Home</a>
+            <div class="dropdown">
+                <a href="#" id="forum-link" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <img src="Imagens/Icones/forum.png" class="icon">Fórum</a>
+                <ul class="dropdown-menu"> 
+                    <li><a class="dropdown-item" href="Forum.html">Comunidade</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a href="#" id="forum-link" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="Imagens/Icones/noticia.png" class="icon">Notícias</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Conteudo.html">Energias Renováveis e seus principais conceitos</a></li>
+                </ul>
+            </div>
+            <a href="Sobre-o-Projeto.html" id="sobre-link"> <img src="Imagens/Icones/sobre.png" class="icon"> Sobre o Projeto</a>
+            <a href="https://colab.research.google.com/drive/1KyN3qekI4T2a1aEl60CdiJ5WP6YkVXZA?usp=sharing" id="Estatística"> <img src="/Imagens/Icones/Estatistica.png" class="icon"> Estatística</a>
+        </nav>
+        <div class="auth-buttons">
+            <a href="Cadastro.html" class="btn btn-secondary">Fazer Cadastro</a>
+            <a href="Login.html" class="btn btn-success">Fazer Login</a>
+        </div>
+    </header>
+
+
+    <main>
+        <!--Busca Card-->
+        <section class="container-Busca">
+            <div class="boxBusca" style="line-height: 0%;">
+                <!--Categorias-->
+                <div class="grupo-categoria">
+                    <h3>Categoria</h3>
+                    <div class="custom-select-wrapper">
+                        <select class="form-select custom-select">
+                            <option>Todas</option>
+                            <option>Você usa Energias Renováveis?</option>
+                        </select>
+                    </div>
+                </div>
+                <!--Data-->
+                <div class="grupo-data">
+                    <h3>Data</h3>
+                    <div class="custom-select-wrapper">
+                        <select class="form-select custom-select">
+                            <option>18/05/2025</option>
+                            <option>14/05/2025</option>
+                        </select>
+
+                    </div>
+                </div>
+                <!--Search-->
+                <div class="cotainer-Search">
+                    <form class="d-flex " role="search">
+                        <input class="form-control custom-search custom-input" type="search" placeholder="Buscar"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success custom-button" type="submit">Aplicar</button>
+                    </form>
+                </div>
+            </div>
+            <section class="container-Button">
+                <!--Perfil-->
+                <div class="box perfilBox">
+                    <img src="Imagens/Avatares/Avatar1.png" alt="Populares"
+                        style="height: 62px; width: 52px; margin-right: 10px ; padding-bottom: 17px;"><span
+                        style="margin-top: 10px;">João Silva</span>
+                </div>
+                <!--Botão 1-->
+                <button type="button" class="btn btn-outline-secondary btn-custom-size"
+                    style="color: rgb(255, 255, 255); padding-right: 80px;">
+                    <img src="Imagens\Componentes\Populares.png" alt="Populares"
+                        style="height: 25px; width: 27px; margin-right: 10px;">Popular
+                </button>
+                <!--Botão 2-->
+                <button type="button" class="btn btn-outline-secondary btn-custom-size"
+                    style="color: rgb(255, 255, 255); padding-right: 65px;">
+                    <img src="Imagens\Componentes/Explorar.png" alt="Populares"
+                        style="height: 25px; width: 27px; margin-right:10px">Exploarar
+                </button>
+                <!--Botão 3-->
+                <button type="button" class="btn btn-outline-secondary btn-custom-size"
+                    style="color: rgb(255, 255, 255); padding-right: 90px;">
+                    <img src="Imagens\Componentes\Tudo.png" alt="Populares"
+                        style="height: 20px; width: 30px; margin-right:10px">Tudo
+                </button>
+            </section>
+        </section>
+        <!--Card 1---------------------------------------------------------------------------------------------->
+        <div class="conteudo-principal">
+            <div class="box">
+                <div class="box-header">
+                    <!--Tamanho Imagem-->
+                    <img src="Imagens\Avatares\Avatar1.png" alt="imagem do perfil" style="height: 72" width="82">
+                    <div>
+                        <h1 style="line-height: 0%;">João Silva</h1>
+                        <span class="tempo">1h atrás</span>
+                    </div>
+                    <!--<button class="fixar-btn">📌 Fixar</button>-->
+                </div>
+
+                <h3 style="line-height: 0%;">Você usa Enegias Renováveis?</h3>
+
+                <div style="margin-right: 150px;">
+                    <p>Nos últimos anos, comecei a pesquisar sobre fontes de energia limpa, como solar e eólica.
+                        Além de ajudar o meio ambiente, parece ser uma boa economia no longo prazo.
+                        Alguém aqui já instalou esse tipo de sistema em casa ou conhece quem tenha?
+                    </p>
+                </div>
+
+                <div class="box-footer">
+                    <div class="reacoes">
+                        <div class="container-Like" style="margin-top: -150px;">
+                            <div class="reacao">
+                                <i><img style="height: 25px; width: 25px;" src="Imagens\Componentes\Like.png"
+                                        alt="Like"></i>
+                                <span>80</span>
+                            </div>
+                            <div class="reacao">
+                                <i><img style="height: 25px; width: 25px;" src="Imagens\Componentes/Deslike.png"
+                                        alt="Like"></i>
+                                <span>20</span>
+                            </div>
+                        </div>
+                        <div class="info-extra"
+                            style="background-color: black; border-radius: 10cqi;padding: 5px 5px; margin-top: -10px;">
+                            <span>­­­­👥 +1000 Visualizações</span>
+                            <span>💬 +100 Comentários</span>
+                            <span>⭐ 12</span>
+                            <span>🔗 90</span>
+                            <span>🚩Reportar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Card 2-------------------------------------------------------------------------------------------------->
+        <div class="conteudo-principal">
+            <div class="box">
+                <div class="box-header">
+                    <!--Tamanho Imagem-->
+                    <img src="Imagens\Avatares\Avatar2.png" alt="imagem do perfil" style="height: 100; width: 68px;
+                                 margin: 5px;">
+                    <div>
+                        <h1 style="line-height: 0%;">Carlos Lima</h1>
+                        <span class="tempo">1h atrás</span>
+                    </div>
+                    <!--<button class="fixar-btn">📌 Fixar</button>-->
+                </div>
+
+                <h3 style="line-height: 0%;">Você usa Enegias Renováveis?</h3>
+
+                <div style="margin-right: 170px;">
+                    <p>
+                        Sim! Instalei painéis solares há 1 ano e minha conta de luz caiu mais de 70%. No início é caro,
+                        mas o retorno vem rápido e ainda ajuda o planeta.
+                    </p>
+                </div>
+
+
+                <div class="box-footer">
+                    <div class="reacoes">
+                        <div class="container-Like" style="margin-top: -120px;">
+                            <div class="reacao">
+                                <i><img style="height: 25px; width: 25px;" src="Imagens\Componentes\Like.png"
+                                        alt="Like"></i>
+                                <span>80</span>
+                            </div>
+                            <div class="reacao">
+                                <i><img style="height: 25px; width: 25px;" src="Imagens\Componentes/Deslike.png"
+                                        alt="Like"></i>
+                                <span>20</span>
+                            </div>
+                        </div>
+                        <div class="info-extra"
+                            style="background-color: black; border-radius: 10cqi;padding: 5px 5px; margin-top: 15px; margin-top: 16px;">
+                            <span>­­­­👥 +1000 Visualizações</span>
+                            <span>💬 +100 Comentários</span>
+                            <span>⭐ 12</span>
+                            <span>🔗 90</span>
+                            <span>🚩Reportar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Card 3-------------------------------------------------------------------------------------------------->
+        <div class="conteudo-principal">
+            <div class="box">
+                <div class="box-header">
+                    <!--Tamanho Imagem-->
+                    <img src="Imagens\Avatares\Avatar3.png" alt="imagem do perfil" style="height: 100; width: 68px;
+                                 margin: 5px;">
+                    <div>
+                        <h1 style="line-height: 0%;">Carlos Lima</h1>
+                        <span class="tempo">1h atrás</span>
+                    </div>
+                    <!--<button class="fixar-btn">📌 Fixar</button>-->
+                </div>
+
+                <h3 style="line-height: 0%;">Você usa Enegias Renováveis?</h3>
+
+                <div style="margin-right:  150px;">
+                    <p>Tenho muito interesse, mas o investimento inicial ainda é alto pra mim. Já pesquisei bastante e
+                        estou de olho em incentivos do governo ou linhas de crédito.
+                    </p>
+                </div>
+
+                <div class="box-footer">
+                    <div class="reacoes">
+                        <div class="container-Like" style="margin-top: -120px;">
+                            <div class="reacao">
+                                <i><img style="height: 25px; width: 25px;" src="Imagens\Componentes\Like.png"
+                                        alt="Like"></i>
+                                <span>80</span>
+                            </div>
+                            <div class="reacao">
+                                <i><img style="height: 25px; width: 25px;" src="Imagens\Componentes/Deslike.png"
+                                        alt="Like"></i>
+                                <span>20</span>
+                            </div>
+                        </div>
+                        <div class="info-extra"
+                            style="background-color: black; border-radius: 10cqi;padding: 5px 5px; margin-top: 16px;">
+                            <span>­­­­👥 +1000 Visualizações</span>
+                            <span>💬 +100 Comentários</span>
+                            <span>⭐ 12</span>
+                            <span>🔗 90</span>
+                            <span>🚩Reportar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Card 4-------------------------------------------------------------------------------------------------->
+        <div class="conteudo-principal">
+            <div class="box">
+                <div class="box-header">
+                    <!--Tamanho Imagem-->
+                    <img src="Imagens\Avatares\Avatar4.png" alt="imagem do perfil" style="height: 100; width: 68px;
+                                 margin: 7px;">
+                    <div>
+                        <h1 style="line-height: 0%;">Ana Pereira</h1>
+                        <span class="tempo">1h atrás</span>
+                    </div>
+                    <!--<button class="fixar-btn">📌 Fixar</button>-->
+                </div>
+
+                <h3 style="line-height: 0%;">Você usa Enegias Renováveis?</h3>
+
+                <div style="margin-right:  150px;">
+                    <p>
+                        Na chácara da minha família usamos turbinas eólicas há alguns anos. É ótimo, principalmente em
+                        regiões com muito vento, e nos tornamos quase autossuficientes.
+                    </p>
+                </div>
+
+                <div class="box-footer">
+                    <div class="reacoes">
+                        <div class="container-Like" style="margin-top: -120px;">
+                            <div class="reacao">
+                                <i><img style="height: 25px; width: 25px;" src="Imagens\Componentes\Like.png"
+                                        alt="Like"></i>
+                                <span>80</span>
+                            </div>
+                            <div class="reacao">
+                                <i><img style="height: 25px; width: 25px;" src="Imagens\Componentes/Deslike.png"
+                                        alt="Like"></i>
+                                <span>20</span>
+                            </div>
+                        </div>
+                        <div class="info-extra"
+                            style="background-color: black; border-radius: 10cqi;padding: 5px 5px; margin-top: 12px;">
+                            <span>­­­­👥 +1000 Visualizações</span>
+                            <span>💬 +100 Comentários</span>
+                            <span>⭐ 12</span>
+                            <span>🔗 90</span>
+                            <span>🚩Reportar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Javascript/Forum.js"></script>
+
+</body>
+
+</html>

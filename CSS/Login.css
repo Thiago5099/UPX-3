@@ -1,0 +1,63 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.login-card {
+  background-color: #404244;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-control {
+  background-color: #232323;
+  border: none;
+  color: #ffffff;
+}
+    
+.form-control:focus {
+  background-color: #232323;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.btn-login {
+  background-color: #43CAAD;
+  border: none;
+}
+  
+.btn-login:hover {
+  background-color: #232323;
+    }
+    
+.register-link {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.register-link a {
+  color: #43CAAD;
+  text-decoration: none;
+}
+    
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.form-control:focus {
+  background-color: #232323 !important; /* cor de fundo quando estiver digitando */
+  box-shadow: none !important;          /* remove o brilho azul padrão */
+  border-color: #232323 !important;     /* opcional: muda a borda para combinar */
+}
+
+.form-control {
+  background-color: #232323 !important; /* cor de fundo padrão */
+}
+

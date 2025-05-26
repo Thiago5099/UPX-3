@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 40px;
+    background-color: #404244;
+    border-bottom: 1px solid #555;
+    height: 80px;
+    min-height: 80px;
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #43CAAD;
+}
+
+.nav {
+    display: flex; /* Alterado para flex para alinhar os itens horizontalmente */
+    gap: 20px;
+    padding: 15px 0; /* Ajustei o padding para cima e para baixo */
+}
+
+.nav a {
+    color: #6C7896;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #222;
+    padding: 20px;
+    border-right: 1px solid #666;
+    min-height: calc(100vh - 140px); /* Ajustado para o header e footer */
+}
+
+.sidebar h2 {
+    color: #43CAAD;
+    font-size: 18px;
+    margin: 20px 0 10px;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar ul li span {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.sidebar ul li a:hover + span,
+.sidebar ul li span:hover {
+    color: #43CAAD;
+}
+
+/* Conteúdo do Fórum */
+.forum-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Estilizando os botões do Bootstrap */
+.btn-success {
+    background-color: #43CAAD;
+    border-color: #43CAAD;
+}
+
+.btn-success:hover {
+    background-color: #5cffbe;
+    border-color: #5cffbe;
+}
+
+.btn-secondary {
+    background-color: #ccc;
+    border-color: #ccc;
+}
+
+.btn-secondary:hover {
+    background-color: #bbb;
+    border-color: #bbb;
+}
+
+.sidebar.d-none + #main-content {
+    max-width: 100%;
+}
+
+.text-sucess {
+    color: #43CAAD;
+}
+
+.nav .dropdown {
+    position: relative;
+}
+
+.nav .dropdown-toggle {
+    color: #6C7896;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.icon {
+    width: 20px; /* Tamanho do ícone */
+    height: 20px;
+    margin: 4px;
+}
